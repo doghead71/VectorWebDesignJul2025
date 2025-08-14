@@ -22,18 +22,18 @@ header {
 }
 
 div#tree {
-    height:10px;
-    width:10px;
+    height:200px;
+    width:200px;
 }
 
 #tree img{
-    width:100%
+    width:100%;
     height:auto;
 }
 
-ol {
+div.side-by-side {
     display: flex;
-    flex-direction:column;
-    justify-content: flex-end;
+    flex-direction:row;
+    justify-content: flex-start;
     column-gap:15px;
 }
