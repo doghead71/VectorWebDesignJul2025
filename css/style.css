@@ -1,0 +1,39 @@
+body {
+    margin:0px;
+    padding:0px;
+    background-color: pink;
+}
+
+div#logo {
+    height:100px;
+    width:100px;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap:15px;
+}
+
+div#tree {
+    height:10px;
+    width:10px;
+}
+
+#tree img{
+    width:100%
+    height:auto;
+}
+
+ol {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    column-gap:15px;
+}
