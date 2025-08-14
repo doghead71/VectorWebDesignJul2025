@@ -16,5 +16,23 @@ div#logo {
 
 header {
     display: flex;
-    
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+div#interests {
+    height: 200px;
+    width: 200px;
+}
+
+#interests img {
+    width: 100%;
+    height: auto;
+}
+div.side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 25px;
 }
