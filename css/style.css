@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(181, 206, 217);
+}
+
+div#logo {
+    height: 100px;
+    width: 100px;
+}
+
+#logo img {
+    height: auto ;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    column-gap: 15px;
+}
+
+div#mind {
+    height: 120px;
+    width: 120px;
+}
+#mind img {
+    height: 100%;
+    width: 100%;
+}
+
+
+div.column{
+display:flex;
+flex-direction: row;
+justify-content:flex-start;
+column-gap: 15px;
+}
