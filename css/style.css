@@ -13,3 +13,8 @@ div#logo {
     height: auto;
     width: 100%;
 }
+
+header {
+    display: flex;
+    
+}
