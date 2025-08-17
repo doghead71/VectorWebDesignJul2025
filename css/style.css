@@ -17,7 +17,7 @@ div#logo {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:left;
     column-gap: 15px;
 }
 
