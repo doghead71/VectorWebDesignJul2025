@@ -34,7 +34,8 @@ div#abstract_ict{
     height: auto;
 }
 
-div#interests{
+
+ol#interests{
     width: 300px;
     height: auto;
 }
