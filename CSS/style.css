@@ -21,11 +21,11 @@ header{
     column-gap: 10px;
 }
 
-li{
+div.side-by-side{
     display: flex;
-    flex-direction:row;
-    justify-content: left;
-    column-gap: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 25px;
 }
 
 div#png {
@@ -36,4 +36,11 @@ div#png {
 #png img{
     height: 100%;
     width: 100%;
+}
+
+li{
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+    column-gap: 15px;
 }
