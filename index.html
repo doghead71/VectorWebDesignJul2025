@@ -6,12 +6,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shazzam's Website</title>
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
 
     <body>
         <!-- body tags -> Anything here is displayed/showed on the webpage -->
         <header>
-            <img src="./img/code_writer.webp" alt="Picture of a code symbol">
+            <div id="logo">
+                <img src="./img/code_writer.webp" alt="Picture of a code symbol">
+            </div>
             <h1>Shazzam's Website</h1>
         </header>
         <br>
@@ -27,15 +30,29 @@
             <li>I'm a technical Support Officer at the Ministry.</li>
         </ul>
 
-        <p>
-            What are my goals? These include: </p>
-            <ol>
-                <li> Being a beyond exceptional <a href="https://github.com/Shazthestorylover" target="_blank" rel="noopener noreffer">Software Developer</a>. </li>
-                <li> Being a beyond exceptional Graphic Designer.</li>
-                <li> Being a beyond exceptional technician.</li>
-                <li> Continue learning how to cook.</li>
-                <li> Continue learning how to drive.</li>
-            </ol>
+        <p>What are my goals? These include: </p>
+
+            <!-- flex container starts here -->
+            <div class="flex_paragragh">
+
+                <!-- Flex object for Abstract ICT Image -->
+                <div id="abstract_ict">
+                    <img src="./img/abstract_ict.webp" alt="abstract image of code in a world of 1's and 0's.">
+                </div>
+
+                <!--flex object for list elements -->
+                <div id="interests">
+                    <ol>
+                        <li> Being a beyond exceptional <a href="https://github.com/Shazthestorylover" target="_blank" rel="noopener noreffer">Software Developer</a>. </li>
+                        <li> Being a beyond exceptional Graphic Designer.</li>
+                        <li> Being a beyond exceptional technician.</li>
+                        <li> Continue learning how to cook.</li>
+                        <li> Continue learning how to drive.</li>
+                    </ol>
+                </div>
+
+            </div>
+            <!-- Flex container ends here. -->
         <p>These are a short list of some of my goals.</p>
     </body>
 </html>

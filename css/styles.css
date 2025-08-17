@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+
+div#logo{
+    height: 150px;
+    width: 150px;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+/* Class Exercise*/
+
+/*Modifying the image*/
+div#abstract_ict{
+    width: 150px;
+    height: 150px;
+}
+
+#abstract_ict img{
+    width: 100%;
+    height: auto;
+}
+
+div#interests{
+    width: 300px;
+    height: auto;
+}
+
+
+/*Using flexbox to get image and list contents side by side.*/
+div.flex_paragraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 25px;
+}
