@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:bisque;
+}
+
+div#logo{
+    height: 100px;
+    width: 100px;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+div#webdesign{
+    height: 200px;
+    width: 200px;
+}
+
+#webdesign img{
+    width: 100%;
+    height: auto;
+}
+
+div.my-interest{
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    column-gap: 25px;
+}
