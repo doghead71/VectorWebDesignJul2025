@@ -27,6 +27,7 @@ header{
 div#abstract_ict{
     width: 150px;
     height: 150px;
+    padding-left: 10px;
 }
 
 #abstract_ict img{
@@ -36,15 +37,15 @@ div#abstract_ict{
 
 
 ol#interests{
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
 
 /*Using flexbox to get image and list contents side by side.*/
-div.flex_paragraph{
+div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    column-gap: 25px;
+    column-gap: 15px;
 }
