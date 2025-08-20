@@ -43,9 +43,9 @@ ol#interests{
 
 
 /*Using flexbox to get image and list contents side by side.*/
-div{
+div.flex_paragraph{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    column-gap: 15px;
+    gap: 15px;
 }
