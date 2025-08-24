@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+}
+div#logo {
+    height: 100px;
+    width: 100px;
+}
+#logo img {
+    height: 100%;
+    width: auto;
+}
+header {
+    display:flex;
+    direction: row;
+    justify-content: flex-start;
+    column-gap: 15px;
+}
