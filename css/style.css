@@ -19,6 +19,7 @@ header {
     flex-direction: row;
     justify-content: center;
     column-gap:15px;
+    margin-bottom: 30px;
 }
 
 div#tree {
@@ -37,3 +38,40 @@ div.side-by-side {
     justify-content: flex-start;
     column-gap:15px;
 }
+
+nav{
+    background-color: aquamarine;
+}
+
+nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 35px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: background 3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    display: block;
+    padding: 8px 16px;
+    background: transparent;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    color: yellow;
+    border-radius: 4px;
+}
+
+nav a.current {
+    background-color:green;
+    color: yellow;
+    border-radius: 8px; 
+}
+
