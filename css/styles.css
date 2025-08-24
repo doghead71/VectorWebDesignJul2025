@@ -19,6 +19,7 @@ header{
     flex-direction: row;
     justify-content: center;
     column-gap: 15px;
+    margin-bottom: 30px;
 }
 
 /* Class Exercise*/
@@ -85,4 +86,74 @@ nav a.current{
     color:forestgreen;
     font-weight: bold;
     border-radius: 10px;
+}
+
+/* Class Exercise for example page*/
+div#content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+}
+
+#content p{
+    font-size: 16px;
+}
+
+#content p, h2{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#content img{
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    font-size: 20px;
+}
+
+a.click_me{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+    padding: 10px 20px;
+    background: gold;
+    border-radius: 10%;
+    margin: 80px 20px;
+    width: 100px;
+}
+
+a.click_me:hover{
+    background-color: blue;
+    color: aquamarine;
+    border-radius: 10px;
+}
+
+section.nested_section{
+    padding: 20px;
+    font-style: italic;
+}
+
+section#about{
+    padding-top: 20px;
+}
+
+div.abstract_code_img{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.abstract_code_img p{
+    margin-top: 220px;
+    padding-left: 20px;
 }
