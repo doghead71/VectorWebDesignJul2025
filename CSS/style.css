@@ -19,6 +19,7 @@ header{
     flex-direction:row;
     justify-content: center;
     column-gap: 10px;
+    margin-bottom: 20px;
 }
 
 div.side-by-side{
@@ -36,11 +37,45 @@ div#png {
 #png img{
     height: 100%;
     width: 100%;
+
 }
 
-li{
+ul li{
     display: flex;
     flex-direction:row;
-    justify-content: left;
+    justify-content:left;
     column-gap: 15px;
+}
+
+nav{
+    background-color: yellowgreen;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 8px 16px;
+    background: transparent;
+}
+
+nav a:hover{
+    background-color: blue;
+    color: yellowgreen;
+    border-radius: 4px;
+}
+
+nav a.current{
+    background-color:rgb(6, 6, 14) ;
+    color: lightyellow;
+    border-radius: 8px;
 }
