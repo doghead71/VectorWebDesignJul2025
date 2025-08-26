@@ -3,7 +3,6 @@ body {
     padding: 0px;
     background-color:rgb(192, 154, 228);
 }
-
 div#logo {
     height: 150px;
     width: 150px;
@@ -17,7 +16,7 @@ header {
     flex-direction: row;
     justify-content:center;
     column-gap: 15px;
-    margin: bottom 20px;
+    margin: 20px;bottom: 20px;
 }
 div#plant {
     height: 200px;

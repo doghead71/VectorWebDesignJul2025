@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: red;
+    background-color:red;
 }
 div#logo {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 #logo img {
     height: 100%;
@@ -13,7 +13,51 @@ div#logo {
 }
 header {
     display:flex;
-    direction: row;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content:center;
     column-gap: 15px;
+    margin: 20px;bottom: 20px;
 }
+div#content {
+    height: 200px;
+    width: 200px;
+}
+#content img {
+    height: 100%;
+    width: auto;
+}
+div.sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 25px;
+}
+nav {
+    background-color: rgb(221, 124, 126);
+}
+nav ul {
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+    column-gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 16px;
+    background: transparent;
+}
+nav a:hover {
+    background-color: white;
+    color: rgb(221, 124, 126);
+    border-radius: 8px;
+}
+
+
+
