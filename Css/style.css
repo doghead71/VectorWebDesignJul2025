@@ -64,3 +64,60 @@ nav a.current {
     color: blueviolet;
     border-radius: 8px;
 }
+#menu-toggle {
+    /*display:none; could be used but will not be accesible to screen readers etc */
+    position:absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip-path: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+.menu-icon {
+    display: none; /*hidden by default, shown in media query*/
+}
+
+@media screen and (max-width: 450px) {
+    /* CSS rules here will only apply when the screen width is 450px or less */
+}
+    header {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+     } 
+   div.sidebyside {
+         padding:10px;
+         column-gap: 10px;
+   }
+   .menu-icon {
+       display: inline-block;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 10px 16px;
+        margin: 6px 10px;
+        border-radius: 8px;
+        color: rgb(233, 229, 237);
+        background: transparent;
+        /* user select none */
+   }
+
+    nav ul{
+       flex-direction: column;
+       row-gap: 15px;
+    }
+    h2,p {
+        padding : 10px;
+    }
+    /*Collapsed menu - hide the menu items*/
+    #menu-toggle:not(:checked) ~ ul {
+        display: none;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    } 
+    #menu-toggle:checked ~ ul {
+        display: flex;
+        /*max-height: 500px; Arbitrary large value to allow for expansion */
+    }
+    
