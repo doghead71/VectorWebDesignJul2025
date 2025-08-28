@@ -32,7 +32,7 @@ div#mind {
 }
 
 
-div.column{
+div.sidebyside{
 display:flex;
 flex-direction: row;
 justify-content:flex-start;
@@ -75,4 +75,52 @@ nav a.current {
     background-color: rgb(106, 106, 189);
     color: white;
     border-radius: 4px;
+}
+
+#menu-toggle {
+    /* dispay:none; could be used instead*/
+    position:absolute;
+    height:1px;
+    width:1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+
+  
+}
+@media screen and (max-width: 450px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.sidebyside {
+        padding:10px;
+        column-gap: 10px;
+    }
+    
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 10px 16px;
+        margin: 6px 10px;
+        border-radius: 8px;
+        color: blue;
+        background: transparent;
+    }
+    nav ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    h2,p {
+        padding: 10px;
+    }
+
+    #meu-toggle:not(:checked) ~ul {
+        display: flex;
+    }
 }
