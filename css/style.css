@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     padding:0px;
@@ -86,6 +90,32 @@ nav a.current {
 
 .menu-icon {
     display: none; /* Hidden by default, shown in media query */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+.gallery-item {
+    background-color: lightgrey;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+}
+
+.gallery-item:hover, .gallery-item:focus, .gallery-item:active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 450px) {
