@@ -10,14 +10,14 @@ div#logo {
 }
 
 #logo img {
-    height: 100% ;
+    height: 100%;
     width: 100%;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     column-gap: 15px;
     margin: 15px;
 }
@@ -26,17 +26,18 @@ div#mind {
     height: 120px;
     width: 120px;
 }
+
 #mind img {
     height: 100%;
     width: 100%;
 }
 
 
-div.sidebyside{
-display:flex;
-flex-direction: row;
-justify-content:flex-start;
-column-gap: 15px;
+div.sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 15px;
 }
 
 nav {
@@ -46,7 +47,7 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     column-gap: 10px;
     list-style: none;
     margin: 0;
@@ -64,7 +65,7 @@ nav a {
     background: transparent;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: blue;
     color: white;
     border-radius: 4px;
@@ -77,17 +78,22 @@ nav a.current {
     border-radius: 4px;
 }
 
+.menu-icon {
+    display: none;
+}
+
 #menu-toggle {
     /* dispay:none; could be used instead*/
-    position:absolute;
-    height:1px;
-    width:1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
 
-  
+
 }
+
 @media screen and (max-width: 450px) {
 
     header {
@@ -96,10 +102,10 @@ nav a.current {
     }
 
     div.sidebyside {
-        padding:10px;
+        padding: 10px;
         column-gap: 10px;
     }
-    
+
     .menu-icon {
         display: inline-block;
         cursor: pointer;
@@ -111,16 +117,18 @@ nav a.current {
         color: blue;
         background: transparent;
     }
+
     nav ul {
         flex-direction: column;
         row-gap: 15px;
     }
 
-    h2,p {
+    h2,
+    p {
         padding: 10px;
     }
 
-    #meu-toggle:not(:checked) ~ul {
-        display: flex;
+    #menu-toggle:not(:checked)~ul {
+        display: none;
     }
 }
