@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -75,6 +78,32 @@ nav a.current {
 }
 .menu-icon {
     display: none; /*hidden by default, shown in media query*/
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+.gallery-item {
+    background-color: wheat;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    
+} 
+
+.gallery :hover, .gallery :focus, .gallery:active{
+    background-color: purple;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 450px) {
