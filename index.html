@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calmin's Website</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmin's Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <body>
-        <header>
+<body>
+    <header>
+        <div id="logo">
             <img src="./img/logo.png" alt="Logo">
-            <h1>Welcome to Calmin's Website</h1>
-        </header>
-        <h2>About Me</h2>
-        <p>Hi, I'm Calmin! This is my personal website where I share my projects and interests.</p>
-        <h3>My Interests</h3>
-        <ol>
-            <li><a href="https://github.com/doghead71" target="_blank" rel="noopener noreferrer">Web Development</a></li>
-            <li>Graphic Design</li>
-            <li>Photography</li>
-        </ol>
+        </div>
+        <h1>Welcome to Calmin's Website</h1>
+    </header>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
 
-    </body>
-
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/gallery.html">Gallery</a></li>
+            <li><a href="./pages/faq.html">FAQ</a></li>
+            <li><a href="./pages/contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <h2>About Me</h2>
+    <p>Hi, I'm Calmin! This is my personal website where I share my projects and interests.</p>
+    <div class="side-by-side">
+        <div id="interests">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <div id="interests-list">
+            <h3>My Interests</h3>
+            <ol>
+                <li><a href="https://github.com/doghead71" target="_blank" rel="noopener noreferrer">Web Development</a>
+                </li>
+                <li>Graphic Design</li>
+                <li>Photography</li>
+            </ol>
+        </div>
+    </div>
+</body>
 </html>
