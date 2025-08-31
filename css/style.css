@@ -1,4 +1,7 @@
-body {
+*{
+    box-sizing: border-box;
+}
+    body {
     margin:0px;
     padding:0px;
     background-color: rgb(231, 231, 164);
@@ -87,6 +90,33 @@ nav a.current {
 
 .menu-icon {
     display: none; /* Hidden by default, shown in media query */
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+
+.gallery-item {
+    background-color: aquamarine;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease; box-shadow: 0.3s ease, scale 0.3s ease;
+}
+
+.gallery-item:hover, .gallery-item:focus, .gallery-item:active {
+    box-shadow: 10px 10px 15px rgba(0,0,0,1);
+    transform: translate(-10px);
+    background-color: green;
+}
+
+.gallery-item img {
+    width:100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 450px) {
