@@ -84,6 +84,10 @@ nav a.current {
     white-space: nowrap;
 }
 
+.menu-icon {
+    display: none;
+}
+
 main{
     font-size: 5px;
 }
@@ -102,37 +106,46 @@ div#content {
     height: auto;
 }
 
-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+@media screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-h2 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    div.side-by-side {
+        padding: 10px;
+        column-gap: 10px;
+    }
 
-div.side-by-side {
-    padding: 10px;
-    column-gap: 10px;
-}
-
-.menu-icon {
+    .menu-icon {
     display: inline-block;
     cursor: pointer;
     font-weight: 700;
     font-size: 2rem;
+    line-height: 1;
     padding: 10px 16px;
     margin: 6px 10px;
     border-radius: 8px;
     color: darkblue;
     background: transparent;
-}
+    }
 
-nav ul {
-    flex-direction: column;
-    row-gap: 15px;
+    nav ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    h2,p {
+        padding: 10px;
+    }
+
+    #menu-toggle:not(:checked) ~ ul {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ ul {
+        display: flex;
+    }
 }
 
