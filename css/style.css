@@ -17,7 +17,7 @@ div#logo {
 header {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     column-gap: 15px;
     margin-bottom: 20px;
 }
@@ -31,15 +31,18 @@ div#interests {
     width: 100%;
     height: auto;
 }
+
 div.side-by-side {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     column-gap: 25px;
 }
+
 nav {
     background: lightgoldenrodyellow;
 }
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -50,6 +53,7 @@ nav ul {
     padding: 0;
     transition: background 0.3s;
 }
+
 nav a {
     text-decoration: none;
     color: darkblue;
@@ -69,4 +73,73 @@ nav a.current {
     background-color: aqua;
     color: lightgoldenrodyellow;
     border-radius: 8px;
+}
+
+
+#menu-toggle {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+.menu-icon {
+    display: none; /* Hidden by default, shown in media query */
+}
+
+@media screen and (max-width: 450px) {
+    /* CSS rules will only apply
+    when the screen width is 450px or less */
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.side-by-side {
+        padding: 10px;
+        column-gap: 15px;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        padding: 10px 16px;
+        margin: 6px 10px;
+        border-radius: 8px;
+        color: darkblue;
+        background: transparent;
+        /* user-select: none; */
+    }
+
+    nav ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+
+h2,
+p {
+    padding: 10px;
+}
+
+/*Collapsed menu - hide the menu items */
+#menu-toggle:not(:checked)~ul {
+    display: none;
+
+    /*max-height: 0;
+    opacity: 0;
+    overflow: hidden; */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+#menu-toggle:checked~ul {
+    display: flex;
+    /* max-height: 500px; Arbitrary large value */
+}
 }
