@@ -37,3 +37,34 @@ div.side-by-side {
     column-gap: 25px;
 
 }
+nav {
+    background-color: black;
+}
+nav ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   list-style: none;
+   transition: background-color 3s;
+}
+
+nav a  {  
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    display: block;
+    padding: 8px 16px;
+    background: transparent;
+}
+
+nav a:hover {
+    background-color: purple;
+    color: white;
+    border-radius: 4px;
+}
+
+nav a.current{
+    background-color: darkred;
+    color: white;
+    border-radius: 8px;
+}
