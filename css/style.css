@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -84,8 +87,30 @@ nav a.current {
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
 }
+
 .menu-icon {
-    display: none; /* Hidden by default, shown in media query */
+    display: none;
+    /* Hidden by default, shown in media query */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+
+.gallery-item {
+    background-color: bisque;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 10px darkred
 }
 
 @media screen and (max-width: 450px) {
@@ -123,23 +148,29 @@ nav a.current {
     }
 
 
-h2,
-p {
-    padding: 10px;
-}
+    h2,
+    p {
+        padding: 10px;
+    }
 
-/*Collapsed menu - hide the menu items */
-#menu-toggle:not(:checked)~ul {
-    display: none;
+    /*Collapsed menu - hide the menu items */
+    #menu-toggle:not(:checked)~ul {
+        display: none;
 
-    /*max-height: 0;
+        /*max-height: 0;
     opacity: 0;
     overflow: hidden; */
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #menu-toggle:checked~ul {
+        display: flex;
+        /* max-height: 500px; Arbitrary large value */
+    }
 }
 
-#menu-toggle:checked~ul {
-    display: flex;
-    /* max-height: 500px; Arbitrary large value */
-}
+.gallery-item img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
 }
