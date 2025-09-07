@@ -38,6 +38,20 @@ div.sidebyside {
 nav {
     background-color: blueviolet;
 }
+div.contact-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    column-gap: 0px;
+    margin: 25px
+}
+div.box1, div.box2 {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0px;
+    background-color: wheat;
+}
 
 nav ul {
     display: flex;
@@ -73,7 +87,7 @@ nav a.current {
     height: 1px;
     width: 1px;
     overflow: hidden;
-    clip-path: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
     white-space: nowrap;
 }
 .menu-icon {
@@ -83,7 +97,7 @@ nav a.current {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 8px;
+    gap: 15px;
 }
 .gallery-item {
     background-color: wheat;
@@ -92,10 +106,14 @@ nav a.current {
     text-align: center;
     
 } 
-
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 .gallery :hover, .gallery :focus, .gallery:active{
     background-color: purple;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -108,20 +126,27 @@ nav a.current {
 
 @media screen and (max-width: 450px) {
     /* CSS rules here will only apply when the screen width is 450px or less */
-}
     header {
-       flex-direction: column;
-       align-items: center;
-     } 
-     h2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
         text-align: center;
-     }
-   div.sidebyside {
-         padding:10px;
-         column-gap: 10px;
-   }
-   .menu-icon {
-       display: inline-block;
+    }
+    div.sidebyside {
+        padding: 10px;
+        column-gap: 10px;
+    }
+    div.contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box2 {
+        text-align: center;
+    }
+    .menu-icon {
+        display: inline-block;
         cursor: pointer;
         font-weight: 700;
         padding: 10px 16px;
@@ -130,14 +155,13 @@ nav a.current {
         color: rgb(233, 229, 237);
         background: transparent;
         /* user select none */
-   }
-
-    nav ul{
-       flex-direction: column;
-       row-gap: 15px;
     }
-    h2,p {
-        padding : 10px;
+    nav ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    h2, p {
+        padding: 10px;
     }
     /*Collapsed menu - hide the menu items*/
     #menu-toggle:not(:checked) ~ ul {
@@ -146,8 +170,9 @@ nav a.current {
         opacity: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-    } 
+    }
     #menu-toggle:checked ~ ul {
         display: flex;
         /*max-height: 500px; Arbitrary large value to allow for expansion */
     }
+}
