@@ -203,6 +203,74 @@ div.abstract_code_img{
     border-radius: 8px;
 }
 
+/*Creating asymmetrical layout for contacts page.*/
+.asymmetrical-layout{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content: flex-start;
+    
+}
+
+.asymmetrical-layout .info-section{
+    width: 70%;
+    border-color: darkorange;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.asymmetrical-layout .contact-section{
+    width: 30%;
+    border-color: darkorange;
+    border-style: solid;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 7px;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 5px;
+}
+
+.info-section img{
+    width: 30%;
+    height: auto;
+}
+
+.info-section p{
+    width: 50%;
+    text-align: left;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.contact-section form h1{
+    font-weight: 900;
+}
+
+.contact-section form h1, label{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.contact-section form button{
+    width: 50%;
+}
+
+
+
 
 /*Responsive Web design --> screen styling for mobile devices*/
 
@@ -261,6 +329,29 @@ div.abstract_code_img{
         background-color: gold;
         transform: scale(1.2);
         transition: background-color 0.3s ease;
+    }
+
+    /*Creating asymmetrical layout for contacts page.*/
+    .asymmetrical-layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .asymmetrical-layout .info-section{
+        width: auto;
+    }
+
+    .asymmetrical-layout .contact-section{
+            width: auto;
+        }
+
+    .info-section{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px;
+        align-items: center;
+        justify-content: center;
     }
 
     
