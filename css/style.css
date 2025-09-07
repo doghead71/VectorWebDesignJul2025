@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0px;
     padding: 0px;
@@ -167,6 +168,17 @@ nav a.current {
         display: flex;
         /* max-height: 500px; Arbitrary large value */
     }
+
+    div ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .container {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
 }
 
 .gallery-item img {
@@ -174,3 +186,45 @@ nav a.current {
     width: 100%;
     border-radius: 8px;
 }
+
+/*Asymmetrical layout for contacts */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /*flex-wrap: wrap;*/
+}
+
+#phone img {
+    width: 200px;
+    height: auto;
+}
+
+div #phone {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: solid;
+    width: 70%;
+
+}
+
+#contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    width: 30%;
+}
+
+.imgphone {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+

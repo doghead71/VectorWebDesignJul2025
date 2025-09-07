@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Website</title>
     <link rel="stylesheet" href="../css/style.css">
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div id="logo">
-                <img src="../Image/Logo.png" alt="Logo">
-            </div>
-          <h1>Contacts</h1>
-        </header>
-        <nav>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../Image/Logo.png" alt="Logo">
+        </div>
+        <h1>Contacts</h1>
+    </header>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰ Menu</label>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="current" href="#">Contacts</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./services.html">Services</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="phone">
+            <img src="../Image/phone.png" class="imgphone" alt="Phone Image">
+            <h2>How to contact me</h2>
+            <p>Use methods listed here, contact methods are always operational.</p>
+        </div>
+        <div id="contact-list">
+            <h3>Call Me</h3>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="current" href="#">Contacts</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./services.html">Services</a></li>
+                <li>Customer Care - 876-345-1234</li>
+                <li>Branch Services - 876-123-6789</li>
+
             </ul>
-        </nav>
-    </body>
+
+        </div>
+    </div>
+</body>
 
 </html>
