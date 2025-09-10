@@ -9,6 +9,7 @@ div#logo{
     width: 100px;
 }
 
+
 #logo img{
     width: 100%;
     height: auto;
@@ -115,12 +116,18 @@ nav a.current{
     border-radius: 8px;
     
 }
+.jam{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 
 
 @media screen and (max-width: 450px){
     /* CSS rules here will only apply 
     when the screen width is 450px or less*/
+}
 header{
     flex-direction:column;
     align-items: center; 
@@ -154,6 +161,8 @@ nav ul{
     flex-direction: column;
     row-gap: 15px;
 }
+
+
 h2,p{
     padding: 10px;
 }
@@ -170,6 +179,103 @@ h2,p{
 #menu-toggle:checked ~ ul{
     display:flex;
     /*max-height: 500px;  */
+
+
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.left {
+  border-right: 1px solid black;
+}
+
+.placeholder {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group .type{
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+}
+
+.password-wrapper button {
+  margin-left: 10px;
+  padding: 8px 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none; 
+  border-radius: 3px;
+  font-size: 14px;
+  
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    border-right: 4px;
+    border-bottom: 5px;
+  }
+  
+  /*.left, .right {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}*/
 
 }
