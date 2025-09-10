@@ -4,17 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Venessa's Website</title>
-        <link rel ="stylesheet" href="../css/Style.css">
+        <title>Nessa's Tingz</title>
+        <link rel="stylesheet" href="../css/Style.css">
     </head>
 
     <body>
-        <header>
-            <div id ="logo">
+        <header aria-label="Site Header">
+            <div id="logo">
                 <img src="../image/logo.png" alt="Logo">
             </div>
             <h1>Contacts</h1>
-        </header>  
+        </header>
     <nav>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">☰</label>
@@ -28,6 +28,37 @@
                 <li><a href="./example.html">Example</a></li>
             </ul>
     </nav>
+
+    <div class="container">
+    <header aria-label="Contact Section Header">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Fill out the form or reach us via the info below.</p>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Our Info</h2>
+        <p><strong>Address:</strong> Mandeville, Manchester, Jamaica</p>
+        <p><strong>Email:</strong> walkerv835@gmail.com</p>
+        <p><strong>Phone:</strong> +1 876 283 9691</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Nessa's Tingz. All rights reserved.</p>
+    </footer>
+  </div>
+
     </body>
 
 </html>
