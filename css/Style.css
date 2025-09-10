@@ -100,7 +100,7 @@ nav a.current{
     border-radius: 8px;
     text-align: center;
     overflow: hidden;
-    transition: transform 0.3s ease; box-shadow: 0.3s ease; scale: 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item:hover, .gallery-item:focus, .gallery-item:active {
