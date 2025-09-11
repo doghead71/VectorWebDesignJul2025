@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     padding: 0px;
@@ -57,6 +58,9 @@ nav ul{
     justify-content: center;
     column-gap: 10px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: background 3s;
 }
 
 nav a{
@@ -79,3 +83,152 @@ nav a.current{
     color: lightyellow;
     border-radius: 8px;
 }
+
+#menu-toggle {
+    /*display none; could be used but will not be accesible to sreen readers etc */
+    position: absolute !important;  
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.menu-icon {
+    display: none; /* Hidden by default, shown in media query*/
+}
+
+  
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 15px;
+}
+.gallery-item{
+    background-color: yellowgreen;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow  0.3s ease, scale 0.3s ease;
+}
+
+.gallery-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px gray ;
+    background-color: darkblue;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width : 450px){
+    /*CSS rules here will only apply
+    when screen width is 450px or less*/
+
+    header{
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    }
+
+    div.side-by-side{
+    padding: 10px;
+    column-gap: 10px;
+    } 
+
+    .menu-icon{
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        padding: 10px 16px;
+        margin: 6px 10px;
+        border-radius: 8px;
+        color: blue;
+        background: transparent;
+        /*user-select: none;*/
+
+    }
+
+    nav ul{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    
+    h2,p{
+        padding: 10px;
+    }
+    /*Colapped menu-hide when menu items */
+    #menu-toggle:not(:checked) ~ ul {
+        display: none;
+
+       /* max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;*/
+
+    }
+
+    #menu-toggle:checked ~ul {
+        display:flex;
+
+        /* max-height: 500px; Arbitrary large value*/
+    }
+
+
+
+.section {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .section img {
+            width: 50%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .section .text {
+            width: 50%;
+            padding: 20px;
+        }
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+
+
+
+.section img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section .text {
+    width: 50%;
+    padding: 20px;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+    .section img {
+        width: 100%;
+    }
+    .section .text {
+        width: 100%;
+    }
+    .section.reverse {
+        flex-direction: column;
+        }
+
+} 
