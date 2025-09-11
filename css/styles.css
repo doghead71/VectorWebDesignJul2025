@@ -199,7 +199,7 @@ div.abstract_code_img{
 
 .gallery-item img{
     width: 100%;
-    height: auto;
+    height: fit-content;
     border-radius: 8px;
 }
 
@@ -269,6 +269,80 @@ div.abstract_code_img{
     width: 50%;
 }
 
+/*----------------------- Class exercise --> Creating z-shaped layout for services page ----------------- */
+
+/* Main Container */
+.z-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+/* First child container*/
+.first-child{
+    display: flex;
+    flex-direction: row;
+}
+
+.first-child img{
+    width: 30%;
+    margin: 10px 30px;
+    padding: 8px;
+    background-color: lightgreen;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;    
+}
+
+.first-child p{
+    width: 70%;
+}
+
+/* Second child container*/
+.second-child{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.second-child img{
+    /*width: 30%;*/
+    flex-grow: 3;
+    margin: 10px 30px;
+    padding: 8px;
+    background-color: lightgreen;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+}
+
+.second-child p{
+    /*width: 70%;*/
+    flex-grow: 7;
+
+}
+
+
+/* Third child container */
+.third-child{
+    display: flex;
+    flex-direction: row;
+}
+
+.third-child img{
+    width: 30%;
+    margin: 10px 30px;
+    padding: 8px;
+    background-color: lightgreen;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+}
+
+.third-child p{
+    width: 70%;
+}
 
 
 
@@ -354,5 +428,68 @@ div.abstract_code_img{
         justify-content: center;
     }
 
-    
+    /* Class exercise --> Z-shaped layout*/
+    .z-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px;
+    }
+
+    /* First child container*/
+    .first-child{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-child img{
+        width: 70%;
+        margin: 10px 30px;
+    }
+
+    .first-child p{
+        width: 90%;  
+    }
+
+    /* Second child container*/
+    .second-child{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-child img{
+        width: 70%;
+        margin: 10px 30px;
+    }
+
+    .second-child p{
+        width: 90%;
+    }
+
+    /* Third child container */
+    .third-child{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third-child img{
+        width: 70%;
+        margin: 10px 30px;
+    }
+
+    .third-child p{
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
