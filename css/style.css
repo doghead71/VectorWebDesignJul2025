@@ -116,6 +116,92 @@ nav a.current {
   background-color: aqua;
 }
 
+body{
+  font-family: Arial, sans-serif;
+  background-color: rgb(41, 236, 57);
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;;
+  background-color: lightgrey;
+  border: 1px solid black;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.register-item {
+  margin-bottom: 15px;
+}
+
+.side-by-side { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  column-gap: 20px;
+}
+
+email, input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: narrow-box;
+  text-align: center;
+  height: auto;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+.side-by-side { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  column-gap: 20px;
+}
+
+.side-by-side.reverse {
+  flex-direction: row-reverse; /*flip order for alternating layout */
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify; 
+  /* optional, improves readability */
+}
+
+
 @media screen and (max-width: 600px) {
   /* Css rules here will only apply
   when the screen width is 450px or less */
@@ -168,8 +254,6 @@ h2,p {
   display: flex;
   /* max-height: 500px; Arbitrary large value */
 }
-
-
 
 
 
