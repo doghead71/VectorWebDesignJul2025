@@ -150,7 +150,7 @@ email, input[type="text"], input[type="password"] {
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: narrow-box;
+  box-sizing: border-box;
   text-align: center;
   height: auto;
 }
@@ -255,6 +255,4 @@ h2,p {
   /* max-height: 500px; Arbitrary large value */
 }
 
-
-
-
+}
