@@ -52,7 +52,34 @@ div.box1, div.box2 {
     margin: 0px;
     background-color: wheat;
 }
+div.calltoaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;  
+    height: 150px;
+    width: auto;
+    border-radius: 25px; 
+    margin: 25px;
+}
 
+div.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;  
+    height: 150px;
+    width: auto;
+    border-radius: 25px; 
+    margin: 25px;
+}
+div.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 150px;
+    width: auto;
+    border-radius: 25px;
+    margin: 25px;
+}
 nav ul {
     display: flex;
     flex-direction : row;
