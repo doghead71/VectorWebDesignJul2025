@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color:#F5F5F5 ;
+}
+
+#Logo {
+    height: 200px;
+    width: 130px;
+}
+
+#Logo img {
+    height: auto;
+    width: 100%;
+}
+
+#interests img {
+    height: 150px;
+    width: 150px;
+}
+
+#interests {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
