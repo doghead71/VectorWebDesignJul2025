@@ -52,33 +52,60 @@ div.box1, div.box2 {
     margin: 0px;
     background-color: wheat;
 }
-div.calltoaction {
+div.join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.calltoaction {
     display: flex;
     flex-direction: row;
-    justify-content: left;  
-    height: 150px;
-    width: auto;
-    border-radius: 25px; 
-    margin: 25px;
-}
 
-div.testimonials {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;  
-    height: 150px;
-    width: auto;
-    border-radius: 25px; 
-    margin: 25px;
 }
-div.services {
+.calltoaction img{
+    width: 50%;
+    margin: 10px 30px;
+    padding: 5px;
+    background-color: beige;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+}
+.calltoaction p{
+    width: 80%;
+}
+.services {
     display: flex;
-    flex-direction: row;
-    justify-content: right;
-    height: 150px;
-    width: auto;
-    border-radius: 25px;
-    margin: 25px;
+    flex-direction: row-reverse;
+
+}
+.services img{
+    width: 50%;
+    margin: 10px 30px;
+    padding: 5px;
+    background-color: beige;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+}
+.services p{
+    width: 50%;
+}
+.testimonials {
+    display: flex;
+    flex-grow: inherit;
+
+}
+.testimonials img {
+    width: 50%;
+    margin: 10px 30px;
+    padding: 5px;
+    background-color: beige;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
 }
 nav ul {
     display: flex;
@@ -169,6 +196,7 @@ nav a.current {
         flex-direction: column;
         justify-content: center;
     }
+    
     .box2 {
         text-align: center;
     }
@@ -189,6 +217,11 @@ nav a.current {
     }
     h2, p {
         padding: 10px;
+    }
+    .calltoaction, .services,.testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     /*Collapsed menu - hide the menu items*/
     #menu-toggle:not(:checked) ~ ul {
