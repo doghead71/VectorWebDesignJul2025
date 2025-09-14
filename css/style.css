@@ -6,7 +6,7 @@ body {
 
 div#logo {
     height: 100px;
-    width: 150px;
+    width: 100px;
 }
 
 #logo img {
@@ -24,7 +24,7 @@ header {
 
 div#mind {
     height: 120px;
-    width: 120px;
+    width: 100px;
 }
 
 #mind img {
@@ -61,7 +61,7 @@ nav a {
     color: blue;
     font-weight: bold;
     display: block;
-    padding: 8px 16px;
+    padding: 8px 8px;
     background: transparent;
 }
 
@@ -90,9 +90,150 @@ nav a.current {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
+}
 
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background-color:lightgrey;
+    padding:8px;
+    border-radius: 8px;
+    text-align: center;
+    overflow:hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;;
 
 }
+
+.gallery-item:hover, .gallery-item:focus, .gallery-item:active{
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgb(71, 70, 70);
+    background-color: darkgray;
+}    
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+div#flag{
+    padding-left: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+#flag img{
+    height: 100%;
+    width: 100%;
+}
+
+.side1{
+    height: 300px;
+    width: 400px;
+    padding: 100px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    justify-content: center;
+    display:inline;
+    word-wrap: break-word;
+}
+.side2{
+    height:300px;
+    width: 200px;
+    padding: 100px;
+    border: 2px;
+    border-style: solid;
+    display:flex;
+    flex-direction:column;
+}
+
+.atside{
+    display: flex;
+    flex-direction: row;
+}
+
+div#computer{
+    height: 130px;
+    width: 150px;
+}
+
+#computer img{
+    height: 100%;
+    width: 100%;
+}
+
+.row1{
+    flex-shrink: 7;
+    column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    align-items: center;
+
+}
+
+.serv{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-self: start;
+}
+
+.serv ul{
+    padding-top: 0px;
+    margin-top: 0px;
+    color: rgb(9, 243, 9);
+    
+}
+
+
+div#stationery{
+    height: 90px;
+    width: 115px;
+}
+
+#stationery img{
+    height: 100%;
+    width: 100%;
+}
+
+.row2{
+    flex-shrink: 3;
+    column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    color: red;
+    font-size: large;
+}
+
+div#sports{
+    height: 90px;
+    width: 100px;
+}
+
+#sports img{
+    height: 100%;
+    width: 100%;
+}
+
+.row3{
+    flex-shrink: 3;
+    column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    color: blue;
+    font-size:x-small;
+}
+
 
 @media screen and (max-width: 450px) {
 
@@ -119,11 +260,11 @@ nav a.current {
     }
 
     nav ul {
-        flex-direction: column;
+        background-color:transparent;
+        flex-direction: row;
         row-gap: 15px;
     }
 
-    h2,
     p {
         padding: 10px;
     }
@@ -131,4 +272,22 @@ nav a.current {
     #menu-toggle:not(:checked)~ul {
         display: none;
     }
+
+    .row1{
+        
+        transform: scale(.7);
+        align-items: center;
+        
+    }
+  
+    .row2{
+         transform: scale(.7);
+         align-items: center;
+    }
+
+    .row3{
+         transform: scale(.7);
+         align-items: center;
+    }
+
 }

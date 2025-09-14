@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+nav{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    list-style: none;
+}
+
+nav a:hover{
+    color: rgb(239, 68, 68);
+    background-color: white;
+}
+
+div#logo{
+    height: 90px;
+    width: 150px;
+    
+
+}
+
+#logo img{
+    height: 90%;
+    width: 90%;
+    
+    
+}
+
+h2{
+    color: blue;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    padding-right: 0px;
+    border-right: 0px;
+}
+
+div#mind{
+    height: 90px;
+    width: 100px;
+    padding-right: 0px;
+    border-left: 0px;
+}
+
+#mind img{
+    height: 100%;
+    width: 100%;
+   
+}
+
+div.sidebyside{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+div.sidebyside ul{
+    color: blueviolet;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width: 450px)  {
+    
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon{
+        display:contents;
+        padding-right: 0px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+
+    #menu-toggle:not(:checked)~ul {
+        display: none;
+    }
+
+    nav{
+        background-color: transparent;
+    }
+
+}
