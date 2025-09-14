@@ -182,3 +182,28 @@ div#content {
     }
 }
 
+.div#side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.div welcome {
+    width: 70%;
+    border-color: darkorchid;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.div register {
+    width: 30%;
+    border-color: darkorchid;
+    border-style: solid;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+.welcometodenneicaswebsite img {
+    width: 100%;
+    height: auto;
+}
