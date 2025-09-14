@@ -180,55 +180,23 @@ nav a.current{
         /* max-height: 500px; Arbitrary large value*/
     }
 
-
-
-.section {
-            display: flex;
-            margin-bottom: 20px;
-        }
-        .section img {
-            width: 50%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .section .text {
-            width: 50%;
-            padding: 20px;
-        }
-        .section.reverse {
-            flex-direction: row-reverse;
-        }
-
-
-
-.section img {
-    width: 50%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.section .text {
-    width: 50%;
-    padding: 20px;
-}
-
-.section.reverse {
-    flex-direction: row-reverse;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .section {
-        flex-direction: column;
-    }
-    .section img {
+     .section1 {
+        height: 100px;
+        width: 450px;
+        column-gap: 15px;
+        display: flex;
+        flex-direction: row;
+        color: blue;
+        font-size: small;
+        padding-right: 300px;
+     }   
+     div#section1{
+        height: 90px;
+        width: 100px;
+     }
+     
+     #image1 {
+        height: 100%;
         width: 100%;
-    }
-    .section .text {
-        width: 100%;
-    }
-    .section.reverse {
-        flex-direction: column;
-        }
-
+     }
 } 
