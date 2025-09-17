@@ -125,35 +125,18 @@ nav a.current{
     border-radius: 8px;
 }
 
-  .section1 {
-        height: 100px;
-        width: 450px;
-        column-gap: 20px;
-        row-gap: 30px;
-        padding: 30px;
+  .frist-container {
         display: flex;
         flex-direction: row;
-        color: blue;
-        font-size: small;
-        padding-right: 300px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 20px;
+        text-align: center;
      }   
-     div#section1{
-        height: 90px;
-        width: 100px;
-     }
-     .image1{
-        float: left;
-     }
-     .p{
-        float: right;
-     }
-     #image1 {
-        height: 100%;
-        width: 100%;
-     }
-
+     
      .section2 {
         height: 100px;
+        margin-top:100px;
         width: 450px;
         column-gap: 20px;
         row-gap: 30px;
@@ -172,6 +155,7 @@ nav a.current{
      #image2 {
         height: 100%;
         width: 100%;
+        float: right;
      }
 
      .section3 {
