@@ -36,15 +36,15 @@
 
   <div class="grid">
     <h2>Register</h2>
-    <input type="email" placeholder="Email" value="akeino920c@gmail.com">
+    <input id="email_input" type="email" placeholder="Email" value="akeino920c@gmail.com">
     <div style="display:flex;" gap:5px; width:100%;>
-      <input type="password" value="password">
+      <input id="password_input" type="password" value="password" placeholder="Password">
       <button type="button">Show</button>
     </div>
-    <button type="button"> Click Me</button>
+    <button type="button" onclick="validateform()">Click Me</button>
   </div>
 </div>
-
+<script src="../scripts/contacts.js"></script>
 </body>
 
 </html>
