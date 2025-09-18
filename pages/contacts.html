@@ -2,49 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-    <title>KEINO</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+  <title>KEINO</title>
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <img src="../image/logo.png" alt="logo">
-        </div>
-        <h1> contacts </h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">home</a></li>
-            <li><a href="../pages/services.html">services</a></li>
-            <li><a href="../pages/gallery.html">gallery</a></li>
-            <li><a href="../pages/faq.html">FAQ</a></li>
-            <li><a class="current" href="#">contacts</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-  <div class="grid">
-    <img src="https://via.placeholder.com/100" alt="Logo">
-    <h1>Welcome To Jamaica</h1>
-    <p>
-      Feel free to Reach out  with querys
-    </p>
-  </div>
-
-  <div class="grid">
-    <h2>Register</h2>
-    <input type="email" placeholder="Email" value="akeino920c@gmail.com">
-    <div style="display:flex;" gap:5px; width:100%;>
-      <input type="password" value="password">
-      <button type="button">Show</button>
+  <header>
+    <div id="logo">
+      <img src="../image/logo.png" alt="logo">
     </div>
-    <button type="button"> Click Me</button>
-  </div>
-</div>
+    <h1> contacts </h1>
+  </header>
 
+  <nav>
+    <ul>
+      <li><a href="../index.html">home</a></li>
+      <li><a href="../pages/services.html">services</a></li>
+      <li><a href="../pages/gallery.html">gallery</a></li>
+      <li><a href="../pages/faq.html">FAQ</a></li>
+      <li><a class="current" href="#">contacts</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="grid">
+      <img src="https://via.placeholder.com/100" alt="Logo">
+      <h1>Welcome To Jamaica</h1>
+      <p>
+        Feel free to Reach out with querys
+      </p>
+    </div>
+
+    <div class="grid">
+      <h2>Register</h2>
+      <input id="email_input" type="email" placeholder="Email" value="akeino920c@gmail.com">
+
+      <input id="password_input" type="password" value="password" placeholder="Password">
+      <button type="button">Show</button>
+
+      <button type="button" onclick="validateForm()"> Click Me</button>
+    </div>
+  </div>
+
+  <script src="../scripts/contact.js"></script>
 </body>
 
 </html>
