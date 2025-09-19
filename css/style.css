@@ -8,7 +8,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 10px;
 }
 
 #Logo {
@@ -66,4 +66,58 @@ nav ul li a.current {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#menu-toggle {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    nav ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    #interests {
+        margin: 10px;
+    }
+
+    #space {
+        margin: 10px;
+    }
+    
+
+    .menu-icon{
+        display: inline-block;
+        cursor:pointer;
+        font-weight: 700;
+        font-size: larger;
+        padding: 10px 16px;
+        margin: 6px 10px;
+        border-radius: 8px;
+        color: black;
+        background: transparent;
+        user-select: none;
+    }
+
+    #menu-toggle:not(:checked) ~ ul {
+        display: none;
+    }
 }
