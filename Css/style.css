@@ -65,7 +65,7 @@ div.join {
 
 }
 .calltoaction img{
-    width: 50%;
+    width: 40%;
     margin: 10px 30px;
     padding: 5px;
     background-color: beige;
@@ -74,7 +74,7 @@ div.join {
     transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
 }
 .calltoaction p{
-    width: 80%;
+    width: 60%;
 }
 .services {
     display: flex;
@@ -82,7 +82,7 @@ div.join {
 
 }
 .services img{
-    width: 50%;
+    width: 40%;
     margin: 10px 30px;
     padding: 5px;
     background-color: beige;
@@ -91,15 +91,15 @@ div.join {
     transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
 }
 .services p{
-    width: 50%;
+    width: 60%;
 }
 .testimonials {
     display: flex;
-    flex-grow: inherit;
+    flex-direction: row;
 
 }
 .testimonials img {
-    width: 50%;
+    width: 40%;
     margin: 10px 30px;
     padding: 5px;
     background-color: beige;
