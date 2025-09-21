@@ -188,22 +188,101 @@ div#content {
     justify-content: flex-start;
 }
 
-.div welcome {
-    width: 70%;
-    border-color: darkorchid;
-    border-style: solid;
-    border-radius: 5%;
+div#welcome {
+    width: 60%;
+    border-color: orchid;
+    border-style: double;
+    border-radius: 1%;
+    background-color: darkorchid;
+    display: flex;
+    flex-direction: column;
 }
 
-.div register {
-    width: 30%;
-    border-color: darkorchid;
-    border-style: solid;
-    border-radius: 5%;
+div#register {
+    width: 40%;
+    border-color: orchid;
+    border-style: double;
+    border-radius: 1%;
     margin: 5px;
+    background-color: darkorchid;
+}
+
+input#email_input {
+    border-color: orchid;
+    border-style: double;
+}
+
+input#password_input {
+    border-color: orchid;
+    border-style: double;
+}
+
+button {
+    border-color: orchid;
+    border-style: double;
 }
 
 .welcometodenneicaswebsite img {
     width: 100%;
     height: auto;
+}
+
+div.row1 {
+    background-color: darkorchid;
+    border-style: solid; 
+    column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    padding: 10px;
+}
+
+div#webpage_design {
+    height: 50%;
+    width: 50%;
+}
+
+#webpage_design img {
+    height: 50%;
+    width: 50%;
+}
+
+div.row2 {
+    background-color: darkmagenta;
+    border-style: solid;
+    column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    padding: 10px;
+}
+
+div#graphic_design {
+    height: 50%;
+    width: 50%;
+}
+
+#graphic_design img {
+    height: 50%;
+    width: 50%;
+}
+
+div.row3 {
+    background-color: darkorchid;
+    border-style: solid; 
+    column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    padding: 10px;
+}
+
+div#branding {
+    height: 50%;
+    width: 50%;
+}
+
+#branding img {
+    height: 50%;
+    width: 50%;
 }
