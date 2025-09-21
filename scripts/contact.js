@@ -10,8 +10,22 @@ function validateForm() {
     console.log("Password:", password)
 
     //Simple valdation
-    //if(email === ** || password === **){
-    //alert("Please fill in all fields.");
-    //return false;
-    //}
+     if (email === ""){
+     alert("Please fill in all fields.");
+     return false;
+     }
+    
+     if (password === ""){
+     alert("Please fill in all fields.");
+     return false;
+     }
+
+     if(password.length < 7 )
+        alert("password is too short");
+
+     if(password.length > 16)
+        alert("pass is too long")
+
+     return true
+
 }
