@@ -46,16 +46,18 @@
             <section class="contact-section">
                 <form>
                     <h1>Register</h1>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="user_email" required><br><br>
+                    <label for="email_input">Email:</label><br>
+                    <input type="email" id="email_input" name="user_email" required><br><br>
 
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="password_input">Password:</label><br>
+                    <input type="password" id="password_input" name="password" required><br><br>
 
-                    <button type="submit" value="submit">Submit</button>
+                    <button type="button" onclick="validateForm()">Submit</button>
                 </form>
             </section>
         </div>
 
+        <!--Referencing contacts scripts for functionality-->
+        <script src="../scripts/contacts.js"></script>
     </body>
 </html>
