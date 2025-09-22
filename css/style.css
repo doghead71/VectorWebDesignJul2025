@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0px;
@@ -79,6 +83,32 @@ nav ul li a.current {
 
 .menu-icon {
     display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:15px;
+}
+
+.gallery-item {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 550px) {
