@@ -196,6 +196,8 @@ div#welcome {
     background-color: darkorchid;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin: 5px;
 }
 
 div#register {
@@ -205,21 +207,30 @@ div#register {
     border-radius: 1%;
     margin: 5px;
     background-color: darkorchid;
+    padding: 10px;
+    margin: 5px;
 }
 
 input#email_input {
     border-color: orchid;
     border-style: double;
+    font-size: x-small;
 }
 
 input#password_input {
     border-color: orchid;
     border-style: double;
+    font-size: x-small;
 }
 
 button {
     border-color: orchid;
     border-style: double;
+}
+
+div#welcometodenneicaswebsite {
+    height: 50%;
+    width: 50%;
 }
 
 .welcometodenneicaswebsite img {
