@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mydesign</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <header>
-        <div id="logo">
-        <img src="../image/logo.png" alt="Logo">
-        </div>
-        <h1>FAQ</h1>
-    </header>
-    <nav>
+  <header>
+    <div id="logo"><img src="../image/logo.png" alt="Logo"></div>
+    <h1>FAQ</h1>
+  </header>
+
+  <nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="./services.html">Services</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
       <li><a href="#">FAQ</a></li>
       <li><a href="./contacts.html">Contacts</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./example.html">Example</a></li>
     </ul>
   </nav>
+
+  <main>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-question">What services do you offer?</div>
+      <div class="faq-answer">We provide web design, graphic design, and training in HTML/CSS.</div>
+
+      <div class="faq-question">Are your designs mobile friendly?</div>
+      <div class="faq-answer">Yes! All our designs are fully responsive and optimized for phones and tablets.</div>
+
+      <div class="faq-question">How can I contact you?</div>
+      <div class="faq-answer">You can reach us through the contact form on our Contacts page.</div>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const ans = q.nextElementSibling;
+        ans.classList.toggle('show');
+      });
+    });
+  </script>
 </body>
 </html>
+

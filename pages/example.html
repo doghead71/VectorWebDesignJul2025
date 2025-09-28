@@ -4,56 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natalie's Website</title>
+  <title>Contacts</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-<header>
-  <div id="logo">
-  <img src="../image.png" alt="Logo">
-  </div>
-  <h1>Contacts</h1>
-</header>
-
-<nav>
-  <ul id="menu" class="navlist">
-  <li><a href="../index.html">Home</a></li>
-  <li><a href="./services.html">Services</a></li>
-  <li><a href="./gallery.html">Gallery</a></li>
-  <li><a href="./faq.html">FAQ</a></li>
-  <li><a href="#">Contacts</a></li>
-</ul>
-</nav>
-
-<main>
-    <h2>Welcome & enjoy</h2>
-    <p>this page with some invalid HTML!</p>
-    <div id="content">
-     <img src="./image/photo.jpg" alt="Photo">
-<button type="button" onclick="location.href='#'">Click Me?</button>
-    <div>
-<p>Here is some text that forgets to close and also contains a <section>nested section</section>
-<section id="about">
-    <h2>About <small>Calmin</small></h2>
-    <p class="red-text">This inline style attribute is misspelled.</p>
-</section>
-<ol>
-<li>First</li>
-<li>Second
-<ul>
-<li>Nested but unclosed
-</ul>
-</li>
-</ol>
-<div class="broken-bg-box">
-Box with bg image
-</div>
+  <header>
+    <div id="logo">
+      <img src="../image/logo.png" alt="Logo">
     </div>
-</div>
-</main>
+    <h1>Example</h1>
+  </header>
 
-</footer>
+  <nav>
+    <ul id="menu" class="navlist">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./faq.html">FAQ</a></li>
+      <li><a href="./about.html"></a></li>
+      <li><a href="#">Example</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <h2>Welcome &amp; Enjoy</h2>
+    <p>This page has been fixed from invalid HTML.</p>
+
+    <div id="content">
+      <img src="../image/photo.jpg" alt="Photo of our office">
+
+      <button type="button" onclick="location.href='mailto:info@example.com'">
+        Contact Us
+      </button>
+
+      <p>
+        Here is some text that was previously broken. Now everything is properly closed and valid.
+      </p>
+
+      <section id="about">
+        <h2>About <small>Calmin</small></h2>
+        <p class="red-text">This text demonstrates a styled paragraph.</p>
+      </section>
+
+      <ol>
+        <li>First</li>
+        <li>Second
+          <ul>
+            <li>Nested but now properly closed</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div class="broken-bg-box">
+        Box with background image
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Natalie’s Website. All rights reserved.</p>
+  </footer>
 </body>
 </html>

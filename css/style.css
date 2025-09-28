@@ -1,73 +1,84 @@
 body {
-    margin: 0px;
-    padding:0px;
-    background-color:lightgreen;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(41, 236, 57);
+  font-family: Arial, sans-serif;
 }
 
+/* Logo styles */
 div#logo {
-    height: 70px;
-    width: 70px;
+  height: 70px;
+  width: 70px;
 }
-
 #logo img {
-   height: 100%;
-   width: auto;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
+/* Header styles */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 10px;
-    margin-bottom: 20px;
-}   
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
 
+/* Photo container */
 div#photo {
   height: 200px;
   width: 200px;
 }
-
 #photo img {
-   height: 100%;
-   width: auto;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
-v{
-    background-color: rgb(105, 105, 235);
+/* Custom element v (if used) */
+v {
+  background-color: rgb(105, 105, 235);
 }
 
+/* Navigation styles */
+nav {
+  position: relative;
+  padding: 10px;
+  background-color: #1e057a;
+}
+
+/* Navigation list styles */
 nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 35px;
-    list-style: none; 
-    margin: 0;
-    padding: 10px;
-    transition: background 3s
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: background 3s;
 }
-
 nav a {
-    text-decoration: none;
-    color:yellow;
-    font-weight: bold;
-    display: block;
-    padding: 8px 16px;
-    background: transparent;
+  text-decoration: none;
+  color: yellow;
+  font-weight: bold;
+  padding: 8px 16px;
+  background: transparent;
+  border-radius: 4px;
 }
-
 nav a:hover {
-    background-color: orange;
-    color: rgb(63, 79, 216);
-    border-radius: 4px;
+  background-color: orange;
+  color: rgb(63, 79, 216);
 }
-
 nav a.current {
-    background-color: orange;
-    color: rgb(64, 64, 201);
-    border-radius: 8px;
+  background-color: orange;
+  color: rgb(64, 64, 201);
+  border-radius: 8px;
 }
 
+/* Hide checkbox for menu toggle */
 #menu-toggle {
   position: absolute;
   height: 1px;
@@ -77,165 +88,181 @@ nav a.current {
   white-space: nowrap;
 }
 
+/* Menu icon for mobile */
 .menu-icon {
-  display: none; /*hidden by default, show in media query */
+  display: none; /* Hidden by default, shown via media query */
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px 16px;
+  color: yellow;
+  user-select: none;
 }
 
+/* Gallery grid */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 8px;
+  padding: 10px;
 }
-
 .gallery-item {
   background-color: rgb(230, 218, 228);
   padding: 8px;
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
 .gallery-item img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
-.gallery-item:hover, .gallery-item:focus, .gallery-item:active {
+.gallery-item:hover,
+.gallery-item:focus,
+.gallery-item:active {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: aqua;
 }
 
-body{
-  font-family: Arial, sans-serif;
-  background-color: rgb(41, 236, 57);
-  margin: 0px;
-  padding: 0px;
+.faq-question {
+  cursor: pointer;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f0f0f0;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
+.faq-answer {
+  display: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid orange;
+  background: #fafafa;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+/* Main container */
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;;
+  max-width: 600px; 
+  margin: 20px auto;
+  padding: 20px;
   background-color: lightgrey;
   border: 1px solid black;
-  margin-top: 20px;
   border-radius: 8px;
 }
 
+/* Register form styles */
 .register-item {
   margin-bottom: 15px;
 }
-
-.side-by-side { 
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  column-gap: 20px;
+form label {
+  display: block; 
+  margin-top: 10px;
+  font-weight: bold;
 }
-
-email, input[type="text"], input[type="password"] {
+form input {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  text-align: center;
-  height: auto;
 }
-
-input[type="submit"] {
+form button {
+  margin-top: 15px;
+  padding: 10px 15px;
   background-color: blue;
   color: white;
-  padding: 10px 15px;
   border: none;
   border-radius: 2px;
-
-input[type="submit"]:hover {
+  cursor: pointer;
+}
+form button:hover {
   background-color: darkblue;
 }
 
-.side-by-side { y: flex;
-  align-items: center;
+/* Flex layout for side-by-side sections */
+.side-by-side {
+  display: flex;
+  justify-content: space-between ;
+  align-items: flex-start;
   margin-bottom: 40px;
   column-gap: 20px;
+  flex-wrap: wrap; /* keep side by side on large screens */
 }
-
 .side-by-side.reverse {
-  flex-direction: row-reverse; /*flip order for alternating layout */
+  flex-direction: row-reverse;
+}
+.info, .register {
+  flex: 1;
+  min-width: 300px; /* prevents too narrow */
 }
 
+/* Photo inside side-by-side */
 .photo {
-  width: 220px;
+  flex: 1;
+  max-width: 220px;
   height: 220px;
-  border: 2px solid black;justify-content: center;
-  align-items: center;.photo img {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cov;ext {
-  flex: 1;
+  object-fit: cover;
+}
+
+/* Text content */
+.text {
+  flex: 2;
   font-size: 1.1rem;
   line-height: 1.6;
-  text-align: justify; 
-  /* optional, improves readability */
+  text-align: justify;
 }
 
-
+/* Responsive adjustments */
 @media screen and (max-width: 600px) {
-  /* Css rules here will only apply
-  when the screen width is 450px or less */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-
-header {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-div.side-by-side {
-  padding: 10px;
-  column-gap: 10px;
-}
-
-.menu-icon {
-  display: inline-block;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1;
-  padding: 10px 16px;
-  margin: 6px 10px;
-  border-radius: 8px;
-  color: yellow;
-  background: transparent;
-  /* user-select: none; */
-}
-
-nav ul {
+  /* Show menu icon and hide menu list initially */
+  .menu-icon {
+    display: inline-block;
+  }
+  nav ul {
     flex-direction: column;
     row-gap: 15px;
-}
+    display: none; /* Hidden initially on mobile */
+    width: 100%;
+  }
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ ul {
+    display: flex;
+  }
 
-h2,p { 
-  padding: 10px;
-}
-
-/*collapsible menu - hide the menu items */
-#menu-toggle:not(:checked) ~ ul {
-  display: none;
- /* max-height: 0;
-    opacity: 0;
-    overflow: hidden; 
-    transition: max-height 0.3s ease, opacity 0.3s ease; */
-}
-
-#menu-toggle:checked ~ ul {
-  display: flex;
-  /* max-height: 500px; Arbitrary large value */
-}
-
+  /* Adjust side-by-side sections for small screens */
+  .side-by-side,
+  .side-by-side.reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .text {
+    width: 100%;
+  }
 }
